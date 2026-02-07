@@ -1,0 +1,6 @@
+To generate this screenshot:
+1. Run `python reports/generate_report.py`
+2. Capture the output which should look like:
+   Analyzing smtp_logs.txt...
+   Total spam detected: 2
+   Report saved to spam_report.txt

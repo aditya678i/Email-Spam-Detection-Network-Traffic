@@ -1,0 +1,25 @@
+220 smtp.example.com ESMTP Postfix
+EHLO mail.spam.com
+MAIL FROM:<spam@spam.com>
+RCPT TO:<victim@example.com>
+DATA
+Subject: You won a lottery!
+.
+QUIT
+221 2.0.0 Bye
+
+EHLO mail.google.com
+MAIL FROM:<friend@gmail.com>
+RCPT TO:<user@example.com>
+DATA
+Hi, how are you?
+.
+QUIT
+
+EHLO mail.fake.org
+MAIL FROM:<bot@fake-mail.org>
+RCPT TO:<everyone@example.com>
+DATA
+Buy check pharmacy
+.
+QUIT
